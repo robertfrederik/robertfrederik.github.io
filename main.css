@@ -1,5 +1,5 @@
 html {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Cardo', serif;
     font-size: larger;
     font-weight: 300;
 }
@@ -27,7 +27,7 @@ a:hover {
 
 .avatar {
     border-radius: 50%;
-    width: 150px;
+    width: 200px;
 }
 
 .icons {
