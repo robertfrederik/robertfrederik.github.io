@@ -20,7 +20,7 @@ a:hover {
     margin-right: -50%;
     transform: translate(-50%, -50%) ;
     text-align: left;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 32px;
     line-height: 1.6em;
 }
@@ -58,7 +58,6 @@ a:hover {
 
 .icons li {
     display: inline;
-    width: 42px;
 }
 
 .icons a {
@@ -67,6 +66,49 @@ a:hover {
 
 .icons a:hover {
     color: #1565c0;
+}
+
+nav .container {
+    max-width: 1000px;
+    margin: 0 auto;            /* center horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.brand img {
+    height: 40px;    /* adjust as needed */
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li + li {
+    margin-left: 1rem;    /* spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-links a:hover {
+    color: #007acc;
 }
 
 .cardo-regular {
