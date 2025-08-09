@@ -47,6 +47,9 @@
         Robert Frederik Uy
       </a>
 
+      <!-- Hamburger button -->
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+
       <!-- Right‑hand Links -->
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
@@ -62,7 +65,7 @@
       <h1 style="margin-top:50px">Education</h1>
       <p style="display: flex; justify-content: space-between; margin-left: 15px; margin-bottom: 0px">
         <span> <strong class="cardo-bold">University of Cambridge</strong> (Peterhouse)</span>
-        <span>2023 - present</span>
+        <span class="hide-on-mobile">2023 - present</span>
       </p>
       <p style="margin-left: 15px; margin-top: 0px">
         <em>Mathematical Tripos</em>
@@ -72,7 +75,7 @@
 
       <p style="display: flex; justify-content: space-between; margin-left: 15px; margin-bottom: 0px">
         <span> <strong class="cardo-bold">Hwa Chong Institution</strong></span>
-        <span>2021 - 2022</span>
+        <span class="hide-on-mobile">2021 - 2022</span>
       </p>
       <p style="margin-left: 15px; margin-top: 0px">
         <em>Singapore-Cambridge GCE Advanced Level</em>
@@ -120,21 +123,30 @@
       <h1 style="margin-top:50px">Awards</h1>
       <p style="display: flex; justify-content: space-between; margin-left: 15px; margin-bottom: 0px">
         <span>Jardine Scholarship</span>
-        <span>2023 - 2027</span>
+        <span class="hide-on-mobile">2023 - 2027</span>
       </p>
       <p style="display: flex; justify-content: space-between; margin-left: 15px; margin-top: 0px; margin-bottom: 0px">
         <span>Top in Experiment and Gold, Singapore Physics Olympiad</span>
-        <span>2021</span>
+        <span class="hide-on-mobile">2021</span>
       </p>
       <p style="display: flex; justify-content: space-between; margin-left: 15px; margin-top: 0px; margin-bottom: 0px">
         <span>Gold, Singapore Junior Physics Olympiad</span>
-        <span>2019 - 2020</span>
+        <span class="hide-on-mobile">2019 - 2020</span>
       </p>
       <p style="display: flex; justify-content: space-between; margin-left: 15px; margin-top: 0px; margin-bottom: 0px">
         <span>Silver, Singapore Mathematics Olympiad</span>
-        <span>2019 - 2022</span>
+        <span class="hide-on-mobile">2019 - 2022</span>
       </p>
     </section>
   </body>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
  
 </html>

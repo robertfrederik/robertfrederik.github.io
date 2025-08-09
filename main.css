@@ -108,6 +108,46 @@ nav .container {
     color: #007acc;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .nav-links {
+      display: none; /* hide by default */
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #ffffff;
+      width: 100%;
+      flex-direction: column;
+      box-shadow: 0 5px 5px -5px rgba(0,0,0,0.2);
+    }
+    .nav-links li {
+      margin-left: 10px;
+    }
+    .nav-links li + li {
+      margin-left: 10px;
+    }
+    .nav-links a {
+      display: block;
+      padding: 0.75rem 1rem;
+    }
+    .menu-toggle {
+      display: block;
+    }
+    .nav-links.show {
+      display: flex;
+    }
+    .hide-on-mobile {
+    display: none;
+    }
+}
+
 .cardo-regular {
   font-family: "Cardo", serif;
   font-weight: 400;
