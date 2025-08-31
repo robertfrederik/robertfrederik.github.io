@@ -120,6 +120,10 @@ nav .container {
     display: none;
 }
 
+.mobile-no-justification {
+    Justify-content: space-between;
+}
+
 @media (max-width: 700px) {
     .nav-links {
       display: none; /* hide by default */
@@ -149,10 +153,13 @@ nav .container {
       display: flex;
     }
     .hide-on-mobile {
-    display: none;
+      display: none;
     }
     .mobile-bullet {
-    display: inline;
+      display: inline;
+    }
+    .mobile-no-justification {
+      Justify-content: flex-start;
     }
     body {
       font-size: smaller;
